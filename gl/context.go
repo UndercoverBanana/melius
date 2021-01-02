@@ -17,7 +17,9 @@ func CreateWindowCanvas(title string) {
 	glfw.WindowHint(glfw.Decorated, glfw.False)
 	glfw.WindowHint(glfw.TransparentFramebuffer, glfw.True)
 
-	win, err := glfw.CreateWindow(100, 100, title, nil, nil)
+	videoMode := glfw.GetPrimaryMonitor().GetVideoMode()
+
+	win, err := glfw.CreateWindow(videoMode.Width, videoMode.Height, title, nil, nil)
 	if err != nil { panic(err) }
 
 	win.MakeContextCurrent()
