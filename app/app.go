@@ -2,8 +2,6 @@ package app
 
 import "github.com/PutterBeanut/melius/gl"
 
-var TITLE = ""
-
 // The App type contains all of the functions and variables needed to edit the application's settings.
 //
 // NOTE: This struct should only be created once (using the New function).
