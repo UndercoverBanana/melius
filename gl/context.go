@@ -13,7 +13,8 @@ func CreateWindowCanvas(title string) {
 
 	// Window hints
 	glfw.WindowHint(glfw.Resizable, glfw.False)
-	glfw.WindowHint(glfw.Decorated, glfw.False)
+	//glfw.WindowHint(glfw.Decorated, glfw.False)
+	glfw.WindowHint(glfw.TransparentFramebuffer, glfw.True)
 
 	videoMode := glfw.GetPrimaryMonitor().GetVideoMode()
 
