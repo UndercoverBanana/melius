@@ -31,7 +31,11 @@ func CreateWindowCanvas(title string) {
 	for !win.ShouldClose() {
 		gl.Clear(gl.COLOR_BUFFER_BIT)
 
-
+		gl.Begin(gl.TRIANGLES)
+		gl.Vertex2f(-0.5, -0.5)
+		gl.Vertex2f(0.5, -0.5)
+		gl.Vertex2f(0.0, 0.5)
+		gl.End()
 
 		win.SwapBuffers()
 		glfw.WaitEvents()
