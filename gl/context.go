@@ -21,8 +21,6 @@ func CreateWindowCanvas(title string) {
 	win, err := glfw.CreateWindow(600, 800, title, nil, nil)
 	if err != nil { panic(err) }
 
-	win.SetPos(100, 100)
-
 	win.MakeContextCurrent()
 
 	for !win.ShouldClose() {
