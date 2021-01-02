@@ -1,6 +1,6 @@
 package app
 
-import "melius/gl"
+import "github.com/PutterBeanut/melius/gl"
 
 var TITLE = ""
 

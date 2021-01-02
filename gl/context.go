@@ -1,8 +1,8 @@
 package gl
 
 import (
+	"github.com/PutterBeanut/melius/app"
 	"github.com/go-gl/glfw/v3.3/glfw"
-	"melius/app"
 )
 
 // Initializes GLFW and sets up the Canvas window.
