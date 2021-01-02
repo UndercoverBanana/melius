@@ -1,7 +1,6 @@
 package gl
 
 import (
-	"fmt"
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
@@ -19,9 +18,7 @@ func CreateWindowCanvas(title string) {
 
 	videoMode := glfw.GetPrimaryMonitor().GetVideoMode()
 
-	fmt.Println(videoMode.Width)
-
-	win, err := glfw.CreateWindow(600, 800, title, nil, nil)
+	win, err := glfw.CreateWindow(videoMode.Width, 800, title, nil, nil)
 	if err != nil { panic(err) }
 
 	win.MakeContextCurrent()
