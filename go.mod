@@ -1,4 +1,4 @@
-module melius
+module github.com/PutterBeanut/melius
 
 go 1.15
 
