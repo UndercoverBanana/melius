@@ -12,10 +12,8 @@ type App struct {
 // Creates an instance of the App type.
 // Should only be called once.
 func New(title string) App {
-	TITLE = title
-
 	// Creates the "background window" (or in this case, "Canvas") that all of the windows are drawn on.
-	gl.CreateWindowCanvas()
+	gl.CreateWindowCanvas(title)
 
 	return App{}
 }
