@@ -26,8 +26,8 @@ func CreateWindowCanvas(title string) {
 
 	win.Maximize()
 
-	glErr := gl.Init()
-	if glErr != nil { panic(glErr) }
+	err = gl.Init()
+	if err != nil { panic(err) }
 
 	for !win.ShouldClose() {
 		gl.Clear(gl.COLOR_BUFFER_BIT)
