@@ -8,5 +8,5 @@
 //
 // If decided that this repository does not have a wanted feature, please read our roadmap.
 // If nothing on the roadmap portrays to adding the requested features, go ahead and add them!
-// The community would be grateful for that feature to be added (reference pull requests)
+// The community would be grateful for that feature to be added (reference pull requests).
 package melius

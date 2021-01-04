@@ -1,14 +1,14 @@
 package melius
 
-// Remember that in graphics, the y axis is flipped.
-// For example, the origin of the screen is at the TOP left instead of the BOTTOM left.
+// These structs are mainly going to be used to position elements on the screen.
+
+// A struct that holds two floating-point values
 type Vector2 struct {
 	// The X and Y values of the vector
 	X, Y float32
 }
 
-// Remember that in graphics, the y axis is flipped.
-// For example, the origin of the screen is at the TOP left instead of the BOTTOM left.
+// A struct that holds two integer values
 type Vector2Int struct {
 	// The X and Y values of the vector
 	X, Y int
